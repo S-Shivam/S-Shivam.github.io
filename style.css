@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f5fa;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #1a1a2e;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+.tagline {
+    margin-top: 10px;
+    color: #aaaaff;
+    font-size: 1.1rem;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ccccff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h2 {
+    border-left: 5px solid #4b59ff;
+    padding-left: 10px;
+    color: #1a1a2e;
+    font-size: 1.8rem;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.exp-card,
+.project-card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #4b59ff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.company {
+    color: #4b59ff;
+    font-weight: bold;
+}
+
+.skills-grid li {
+    margin-bottom: 10px;
+    list-style: square;
+}
+
+footer {
+    background: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
