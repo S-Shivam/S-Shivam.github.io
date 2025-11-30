@@ -1,4 +1,6 @@
-/* ---------- GLOBAL ---------- */
+/* --------------------
+   GLOBAL RESET + BASE
+-----------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -6,138 +8,25 @@
 }
 
 body {
-    font-family: "Inter", Arial, sans-serif;
-    background: #f4f5fa;
+    font-family: "Poppins", sans-serif;
+    background: #fdfdfd;
     color: #333;
     line-height: 1.8;
+    padding-top: 90px; /* space for floating header */
 }
 
-/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
-/* ---------- HEADER ---------- */
+/* --------------------
+       HEADER
+-----------------------*/
 header {
-    text-align: center;
-    padding: 60px 20px 40px;
-    background: #1a1a2e;
-    color: white;
-    position: sticky;
+    width: 100%;
+    position: fixed;
     top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
-
-header h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.tagline {
-    margin-top: 8px;
-    color: #adb8ff;
-    font-size: 1.15rem;
-}
-
-/* Navigation */
-nav {
-    margin-top: 25px;
-}
-
-nav a {
-    margin: 0 18px;
-    color: #dadcff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-    font-size: 1.05rem;
-}
-
-nav a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 8px #ffffff;
-}
-
-/* ---------- SECTIONS ---------- */
-.section {
-    max-width: 950px;
-    margin: 70px auto;
-    padding: 10px 25px;
-}
-
-.section p {
-    font-size: 1.05rem;
-}
-
-/* Section Titles */
-h2 {
-    border-left: 6px solid #4b59ff;
-    padding-left: 12px;
-    color: #1a1a2e;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-/* ---------- CARD STYLING ---------- */
-.exp-card,
-.project-card {
-    background: rgba(255, 255, 255, 0.88);
-    padding: 25px;
-    margin: 25px 0;
-    border-left: 6px solid #4b59ff;
-    border-radius: 10px;
-    backdrop-filter: blur(6px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.exp-card:hover,
-.project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
-}
-
-/* Company Text */
-.company {
-    color: #4b59ff;
-    font-weight: bold;
-    font-size: 1.05rem;
-}
-
-/* Skills */
-.skills-grid li {
-    margin-bottom: 10px;
-    list-style: square;
-    padding-left: 5px;
-}
-
-/* Achievements List */
-ul li {
-    margin: 8px 0;
-}
-
-/* ---------- CONTACT LINKS ---------- */
-a {
-    color: #4b59ff;
-    text-decoration: none;
-    transition: 0.2s ease;
-}
-
-a:hover {
-    color: #1a1a2e;
-    text-shadow: 0 0 5px #4b59ff55;
-}
-
-/* ---------- FOOTER ---------- */
-footer {
-    background: #1a1a2e;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 80px;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-}
+    background: #ffffffee;
+    backdrop-filter: blur(10px);
+    padding: 20px 30px;
+    text-align:
