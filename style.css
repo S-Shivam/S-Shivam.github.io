@@ -1,80 +1,143 @@
-body {
+/* ---------- GLOBAL ---------- */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f5fa;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: #f4f5fa;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------- HEADER ---------- */
 header {
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px 40px;
     background: #1a1a2e;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.8rem;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .tagline {
-    margin-top: 10px;
-    color: #aaaaff;
-    font-size: 1.1rem;
+    margin-top: 8px;
+    color: #adb8ff;
+    font-size: 1.15rem;
+}
+
+/* Navigation */
+nav {
+    margin-top: 25px;
 }
 
 nav a {
-    margin: 0 15px;
-    color: #ccccff;
+    margin: 0 18px;
+    color: #dadcff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 1.05rem;
 }
 
 nav a:hover {
-    color: white;
+    color: #ffffff;
+    text-shadow: 0 0 8px #ffffff;
 }
 
+/* ---------- SECTIONS ---------- */
 .section {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
+    max-width: 950px;
+    margin: 70px auto;
+    padding: 10px 25px;
 }
 
+.section p {
+    font-size: 1.05rem;
+}
+
+/* Section Titles */
 h2 {
-    border-left: 5px solid #4b59ff;
-    padding-left: 10px;
+    border-left: 6px solid #4b59ff;
+    padding-left: 12px;
     color: #1a1a2e;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
-ul {
-    padding-left: 20px;
-}
-
+/* ---------- CARD STYLING ---------- */
 .exp-card,
 .project-card {
-    background: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-left: 5px solid #4b59ff;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.88);
+    padding: 25px;
+    margin: 25px 0;
+    border-left: 6px solid #4b59ff;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.exp-card:hover,
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+
+/* Company Text */
 .company {
     color: #4b59ff;
     font-weight: bold;
+    font-size: 1.05rem;
 }
 
+/* Skills */
 .skills-grid li {
     margin-bottom: 10px;
     list-style: square;
+    padding-left: 5px;
 }
 
+/* Achievements List */
+ul li {
+    margin: 8px 0;
+}
+
+/* ---------- CONTACT LINKS ---------- */
+a {
+    color: #4b59ff;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+a:hover {
+    color: #1a1a2e;
+    text-shadow: 0 0 5px #4b59ff55;
+}
+
+/* ---------- FOOTER ---------- */
 footer {
     background: #1a1a2e;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 25px;
+    margin-top: 80px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
 }
