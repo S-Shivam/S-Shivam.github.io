@@ -1,183 +1,80 @@
-/* --------------------
-   GLOBAL RESET
------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: "Orbitron", "Poppins", sans-serif;
-    background: #0a0a0f;
-    color: #d8d8f7;
-    line-height: 1.7;
-    padding-top: 110px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f5fa;
+    color: #333;
 }
 
-/* Neon Glow Helper */
-.neon-text {
-    text-shadow: 0 0 5px #8b54ff, 0 0 10px #8b54ff, 0 0 20px #8b54ff;
-}
-
-/* --------------------
-        HEADER
------------------------*/
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(10, 10, 20, 0.7);
-    backdrop-filter: blur(15px);
     text-align: center;
-    padding: 35px 25px;
-    z-index: 999;
-    border-bottom: 2px solid rgba(139, 84, 255, 0.3);
-    box-shadow: 0 0 20px rgba(139, 84, 255, 0.3);
+    padding: 50px 20px;
+    background: #1a1a2e;
+    color: white;
 }
 
 header h1 {
+    margin: 0;
     font-size: 2.8rem;
-    font-weight: 700;
-    color: #cfc7ff;
-    text-shadow: 0 0 10px #a676ff, 0 0 25px #a676ff;
 }
 
 .tagline {
-    margin-top: 5px;
-    font-size: 1rem;
-    color: #b5aaff;
-    text-shadow: 0 0 6px #a676ff;
-}
-
-/* --------------------
-        NAVBAR
------------------------*/
-nav {
-    margin-top: 20px;
+    margin-top: 10px;
+    color: #aaaaff;
+    font-size: 1.1rem;
 }
 
 nav a {
-    margin: 0 14px;
+    margin: 0 15px;
+    color: #ccccff;
     text-decoration: none;
-    color: #b8b8ff;
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    padding: 6px 10px;
-    border-radius: 6px;
-    transition: 0.25s ease;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #fff;
-    text-shadow: 0 0 5px #ba63ff, 0 0 15px #9e36ff;
+    color: white;
 }
 
-/* --------------------
-        SECTION
------------------------*/
 .section {
     max-width: 900px;
-    margin: 70px auto;
-    padding: 10px 25px;
+    margin: 50px auto;
+    padding: 20px;
 }
 
-/* Section Headings */
 h2 {
-    color: #e6ddff;
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 18px;
-    position: relative;
-    text-shadow: 0 0 15px #a676ff;
+    border-left: 5px solid #4b59ff;
+    padding-left: 10px;
+    color: #1a1a2e;
+    font-size: 1.8rem;
 }
 
-h2::after {
-    content: "";
-    width: 80px;
-    height: 3px;
-    background: #c77bff;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    box-shadow: 0 0 10px #c77bff;
+ul {
+    padding-left: 20px;
 }
 
-/* --------------------
-        CARDS
------------------------*/
 .exp-card,
 .project-card {
-    background: rgba(22, 22, 35, 0.55);
-    padding: 25px;
-    margin: 30px 0;
-    border-left: 6px solid #c77bff;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 15px rgba(139, 84, 255, 0.25);
-    transition: 0.3s ease;
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #4b59ff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-.exp-card:hover,
-.project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 0 25px rgba(139, 84, 255, 0.7),
-                0 0 40px rgba(139, 84, 255, 0.4);
-}
-
-/* Company text */
 .company {
+    color: #4b59ff;
     font-weight: bold;
-    color: #d4b3ff;
-    text-shadow: 0 0 8px #c77bff;
 }
 
-/* UL List */
-ul {
-    padding-left: 25px;
-}
-
-ul li {
-    margin: 8px 0;
-    color: #dcdcff;
-    font-size: 1.05rem;
-    text-shadow: 0 0 5px #5e3bff;
-}
-
-/* Skills list */
 .skills-grid li {
+    margin-bottom: 10px;
     list-style: square;
 }
 
-/* --------------------
-       LINKS
------------------------*/
-a {
-    color: #d0a5ff;
-    text-decoration: none;
-    transition: 0.2s ease;
-}
-
-a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 10px #bb79ff, 0 0 25px #9b3aff;
-}
-
-/* --------------------
-       FOOTER
------------------------*/
 footer {
+    background: #1a1a2e;
+    color: white;
     text-align: center;
-    padding: 30px;
-    margin-top: 80px;
-    color: #aa99ff;
-    background: rgba(15, 15, 25, 0.7);
-    backdrop-filter: blur(8px);
-    border-top: 2px solid rgba(139, 84, 255, 0.3);
-    box-shadow: 0 0 25px rgba(139, 84, 255, 0.2);
+    padding: 20px;
+    margin-top: 50px;
 }
