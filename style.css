@@ -1,5 +1,5 @@
 /* --------------------
-   GLOBAL RESET + BASE
+   GLOBAL RESET
 -----------------------*/
 * {
     margin: 0;
@@ -7,66 +7,75 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
-    background: #fdfdfd;
-    color: #333;
-    line-height: 1.8;
-    padding-top: 90px; /* space for floating header */
-}
-
 html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: "Orbitron", "Poppins", sans-serif;
+    background: #0a0a0f;
+    color: #d8d8f7;
+    line-height: 1.7;
+    padding-top: 110px;
+}
+
+/* Neon Glow Helper */
+.neon-text {
+    text-shadow: 0 0 5px #8b54ff, 0 0 10px #8b54ff, 0 0 20px #8b54ff;
+}
+
 /* --------------------
-       HEADER
+        HEADER
 -----------------------*/
 header {
-    width: 100%;
     position: fixed;
     top: 0;
-    background: #ffffffee;
-    backdrop-filter: blur(10px);
-    padding: 20px 30px;
+    width: 100%;
+    background: rgba(10, 10, 20, 0.7);
+    backdrop-filter: blur(15px);
     text-align: center;
-    z-index: 1000;
-    box-shadow: 0 4px 25px rgba(0,0,0,0.08);
-    border-bottom: 1px solid #eee;
+    padding: 35px 25px;
+    z-index: 999;
+    border-bottom: 2px solid rgba(139, 84, 255, 0.3);
+    box-shadow: 0 0 20px rgba(139, 84, 255, 0.3);
 }
 
 header h1 {
-    font-size: 2.4rem;
-    color: #222;
+    font-size: 2.8rem;
     font-weight: 700;
+    color: #cfc7ff;
+    text-shadow: 0 0 10px #a676ff, 0 0 25px #a676ff;
 }
 
 .tagline {
     margin-top: 5px;
-    color: #666;
     font-size: 1rem;
+    color: #b5aaff;
+    text-shadow: 0 0 6px #a676ff;
 }
 
 /* --------------------
         NAVBAR
 -----------------------*/
 nav {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 nav a {
-    margin: 0 12px;
+    margin: 0 14px;
     text-decoration: none;
-    color: #444;
+    color: #b8b8ff;
     font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
     padding: 6px 10px;
     border-radius: 6px;
     transition: 0.25s ease;
 }
 
 nav a:hover {
-    background: #ececff;
-    color: #333;
+    color: #fff;
+    text-shadow: 0 0 5px #ba63ff, 0 0 15px #9e36ff;
 }
 
 /* --------------------
@@ -74,94 +83,101 @@ nav a:hover {
 -----------------------*/
 .section {
     max-width: 900px;
-    margin: 60px auto;
-    padding: 10px 20px;
+    margin: 70px auto;
+    padding: 10px 25px;
 }
 
 /* Section Headings */
 h2 {
-    font-size: 1.9rem;
-    margin-bottom: 15px;
-    color: #222;
+    color: #e6ddff;
+    font-size: 2.2rem;
     font-weight: 700;
+    margin-bottom: 18px;
     position: relative;
+    text-shadow: 0 0 15px #a676ff;
 }
 
 h2::after {
     content: "";
-    width: 50px;
+    width: 80px;
     height: 3px;
-    background: #6b5bff;
+    background: #c77bff;
     position: absolute;
     left: 0;
-    bottom: -5px;
-    border-radius: 3px;
+    bottom: -8px;
+    box-shadow: 0 0 10px #c77bff;
 }
 
 /* --------------------
-         CARDS
+        CARDS
 -----------------------*/
 .exp-card,
 .project-card {
-    background: #ffffff;
+    background: rgba(22, 22, 35, 0.55);
     padding: 25px;
-    margin: 25px 0;
-    border-radius: 10px;
-    border: 1px solid #eee;
-    box-shadow: 0 5px 22px rgba(0,0,0,0.05);
+    margin: 30px 0;
+    border-left: 6px solid #c77bff;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(139, 84, 255, 0.25);
     transition: 0.3s ease;
 }
 
 .exp-card:hover,
 .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(139, 84, 255, 0.7),
+                0 0 40px rgba(139, 84, 255, 0.4);
 }
 
+/* Company text */
 .company {
     font-weight: bold;
-    color: #6b5bff;
+    color: #d4b3ff;
+    text-shadow: 0 0 8px #c77bff;
 }
 
-/* --------------------
-       BULLET LISTS
------------------------*/
+/* UL List */
 ul {
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 ul li {
     margin: 8px 0;
+    color: #dcdcff;
+    font-size: 1.05rem;
+    text-shadow: 0 0 5px #5e3bff;
 }
 
-/* SKILLS GRID */
+/* Skills list */
 .skills-grid li {
-    list-style: circle;
+    list-style: square;
 }
 
 /* --------------------
-        CONTACT
+       LINKS
 -----------------------*/
 a {
-    color: #6b5bff;
+    color: #d0a5ff;
     text-decoration: none;
     transition: 0.2s ease;
 }
 
 a:hover {
-    color: #4a3fff;
-    text-decoration: underline;
+    color: #ffffff;
+    text-shadow: 0 0 10px #bb79ff, 0 0 25px #9b3aff;
 }
 
 /* --------------------
-         FOOTER
+       FOOTER
 -----------------------*/
 footer {
-    background: #f5f5f5;
     text-align: center;
-    padding: 25px;
-    margin-top: 60px;
-    color: #444;
-    font-weight: 500;
-    border-top: 1px solid #e0e0e0;
+    padding: 30px;
+    margin-top: 80px;
+    color: #aa99ff;
+    background: rgba(15, 15, 25, 0.7);
+    backdrop-filter: blur(8px);
+    border-top: 2px solid rgba(139, 84, 255, 0.3);
+    box-shadow: 0 0 25px rgba(139, 84, 255, 0.2);
 }
